@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Proyecto {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce número de asignaturas.");
+        int matr = sc.nextInt();
+        System.out.println("Introduce número de horas de estudio por semana.");
+        int hora = sc.nextInt();
+
+        String cadena = "Alberto Martínez";
+        System.out.println("Estudiandte " + cadena);
+        veredicto();
+    }
+    static void veredicto() {
+        int matr = 0;
+        int hora = 0;
+
+
+        if ( matr >= hora) {
+            System.out.println("Bien. Pero una hora de estudio para cada módulo puede ser insuficiente.");
+        }
+        if (hora < matr){
+            System.out.println("Poco tiempo de estudio. Debes dedicar más tiempo.");
+        }
+    }
+}
